@@ -1,5 +1,6 @@
-import "./Task.css";
+import Card from "../ui/Card";
 import type { Task } from "../../types/task";
+import "./Task.css";
 
 type TaskCardProps = {
   task: Task;
@@ -7,7 +8,7 @@ type TaskCardProps = {
 
 function TaskCard({ task }: TaskCardProps) {
   return (
-    <div className="task-card">
+    <Card className="task-card">
       <h3>{task.title}</h3>
 
       <p>{task.description}</p>
@@ -16,7 +17,7 @@ function TaskCard({ task }: TaskCardProps) {
         <span>{task.priority}</span>
         <span>{task.dueDate}</span>
       </div>
-    </div>
+    </Card>
   );
 }
 

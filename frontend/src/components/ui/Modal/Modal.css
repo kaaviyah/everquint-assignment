@@ -1,0 +1,27 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  width: 500px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
