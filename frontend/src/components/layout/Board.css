@@ -1,21 +1,54 @@
+.board-container {
+  padding: 28px 32px;
+  text-align: left;
+}
+
 .board-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
-.board-container {
-  padding: 32px;
+.board-heading {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+  letter-spacing: -0.3px;
 }
+
 .board {
   display: flex;
-  gap: 20px;
-  justify-content: center;
-  padding: 20px;
+  gap: 16px;
+  align-items: flex-start;
+  overflow-x: auto;
+  padding-bottom: 16px;
 }
 
-.board-title {
+.empty-state {
   text-align: center;
-  margin: 20px 0;
+  padding: 48px 24px;
+  color: #9ca3af;
+  font-size: 15px;
+}
+
+.empty-state p {
+  margin: 0 0 8px;
+}
+
+.empty-cta {
+  background: none;
+  border: none;
+  color: #4f46e5;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.empty-cta:hover {
+  color: #3730a3;
 }
