@@ -1,28 +1,44 @@
 import type { Task } from "../types/task";
 
+const now = new Date().toISOString();
+const yesterday = new Date(Date.now() - 86_400_000).toISOString();
+const twoDaysAgo = new Date(Date.now() - 172_800_000).toISOString();
+
 export const mockTasks: Task[] = [
   {
     id: "1",
-    title: "Design Login Page",
-    description: "Create login UI",
+    title: "Design login page",
+    description:
+      "Create the login UI — needs to match the new brand guidelines. Handle email/password and OAuth button.",
     status: "Backlog",
     priority: "High",
-    dueDate: "2026-07-01",
+    assignee: "Sarah K.",
+    tags: ["design", "auth"],
+    createdAt: twoDaysAgo,
+    updatedAt: twoDaysAgo,
   },
   {
     id: "2",
-    title: "Build Navbar",
-    description: "Responsive navbar",
+    title: "Build responsive navbar",
+    description:
+      "Navbar collapses to hamburger on mobile. Dropdown for user account menu.",
     status: "In Progress",
     priority: "Medium",
-    dueDate: "2026-07-02",
+    assignee: "Tom R.",
+    tags: ["frontend"],
+    createdAt: yesterday,
+    updatedAt: now,
   },
   {
     id: "3",
-    title: "Deploy App",
-    description: "Deploy to Vercel",
+    title: "Deploy to Vercel",
+    description:
+      "Set up CI/CD and deploy. Configure env vars for production — don't forget the API key.",
     status: "Done",
     priority: "Low",
-    dueDate: "2026-07-03",
+    assignee: "",
+    tags: ["devops"],
+    createdAt: twoDaysAgo,
+    updatedAt: yesterday,
   },
 ];
