@@ -1,27 +1,49 @@
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.4);
-
+  background: rgba(0, 0, 0, 0.45);
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100;
+  padding: 16px;
 }
 
 .modal {
-  background: white;
+  background: #fff;
   border-radius: 12px;
-  padding: 24px;
-  width: 500px;
+  padding: 28px;
+  width: 100%;
+  max-width: 520px;
+  max-height: 90vh;
+  overflow-y: auto;
   position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.modal-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 20px;
+  padding-right: 32px;
 }
 
 .close-button {
   position: absolute;
   right: 16px;
   top: 16px;
-
   border: none;
   background: transparent;
   cursor: pointer;
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.close-button:hover {
+  background: #f3f4f6;
+  color: #111827;
 }
