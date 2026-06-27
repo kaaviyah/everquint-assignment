@@ -1,0 +1,11 @@
+.board {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.board-title {
+  text-align: center;
+  margin: 20px 0;
+}

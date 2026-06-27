@@ -1,0 +1,12 @@
+.column {
+  width: 300px;
+  min-height: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  background: white;
+}
+
+.empty {
+  color: gray;
+}
